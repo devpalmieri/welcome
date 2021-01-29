@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_generale_sviluppoModelStoreContainer" CdmEntityContainer="db_generale_sviluppoEntities">
+    <EntitySetMapping Name="tab_idpspid">
+      <EntityTypeMapping TypeName="db_generale_sviluppoModel.tab_idpspid">
+        <MappingFragment StoreEntitySet="tab_idpspid">
+          <ScalarProperty Name="id_tab_idpspid" ColumnName="id_tab_idpspid" />
+          <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+          <ScalarProperty Name="OrganizationName" ColumnName="OrganizationName" />
+          <ScalarProperty Name="OrganizationDisplayName" ColumnName="OrganizationDisplayName" />
+          <ScalarProperty Name="OrganizationUrl" ColumnName="OrganizationUrl" />
+          <ScalarProperty Name="SingleSignOnServiceUrl" ColumnName="SingleSignOnServiceUrl" />
+          <ScalarProperty Name="SingleLogoutServiceUrl" ColumnName="SingleLogoutServiceUrl" />
+          <ScalarProperty Name="SubjectNameIdRemoveText" ColumnName="SubjectNameIdRemoveText" />
+          <ScalarProperty Name="DateTimeFormat" ColumnName="DateTimeFormat" />
+          <ScalarProperty Name="NowDelta" ColumnName="NowDelta" />
+          <ScalarProperty Name="logo" ColumnName="logo" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ambiente" ColumnName="ambiente" />
+          <ScalarProperty Name="flag_on_off" ColumnName="flag_on_off" />
+          <ScalarProperty Name="data_stato" ColumnName="data_stato" />
+          <ScalarProperty Name="certificate" ColumnName="certificate" />
+          <ScalarProperty Name="url_metadata" ColumnName="url_metadata" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

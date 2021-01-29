@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_generale_sviluppoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tab_idpspid">
+    <Key>
+      <PropertyRef Name="id_tab_idpspid" />
+    </Key>
+    <Property Name="id_tab_idpspid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EntityId" Type="varchar" MaxLength="100" />
+    <Property Name="OrganizationName" Type="varchar" MaxLength="100" />
+    <Property Name="OrganizationDisplayName" Type="varchar" MaxLength="100" />
+    <Property Name="OrganizationUrl" Type="varchar" MaxLength="100" />
+    <Property Name="SingleSignOnServiceUrl" Type="varchar" MaxLength="100" />
+    <Property Name="SingleLogoutServiceUrl" Type="varchar" MaxLength="100" />
+    <Property Name="SubjectNameIdRemoveText" Type="varchar" MaxLength="100" />
+    <Property Name="DateTimeFormat" Type="varchar" MaxLength="50" />
+    <Property Name="NowDelta" Type="float" />
+    <Property Name="logo" Type="varchar(max)" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="ambiente" Type="varchar" MaxLength="1" />
+    <Property Name="flag_on_off" Type="varchar" MaxLength="1" />
+    <Property Name="data_stato" Type="datetime" />
+    <Property Name="certificate" Type="varchar(max)" />
+    <Property Name="url_metadata" Type="varchar(max)" />
+  </EntityType>
+  <EntityContainer Name="db_generale_sviluppoModelStoreContainer">
+    <EntitySet Name="tab_idpspid" EntityType="Self.tab_idpspid" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_generale_sviluppoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tab_idpspid">
+    <Key>
+      <PropertyRef Name="id_tab_idpspid" />
+    </Key>
+    <Property Name="id_tab_idpspid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EntityId" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OrganizationName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OrganizationDisplayName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OrganizationUrl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SingleSignOnServiceUrl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SingleLogoutServiceUrl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SubjectNameIdRemoveText" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DateTimeFormat" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NowDelta" Type="Double" />
+    <Property Name="logo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ambiente" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="flag_on_off" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="data_stato" Type="DateTime" Precision="3" />
+    <Property Name="certificate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url_metadata" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="db_generale_sviluppoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tab_idpspid" EntityType="Self.tab_idpspid" />
+  </EntityContainer>
+</Schema>
